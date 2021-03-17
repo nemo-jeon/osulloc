@@ -1,0 +1,18 @@
+/* 공통사항 */
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+.main_img_1920 { display: block;}
+.main_img_768 { display: none;}
+.main_img_375 { display: none;}
+
+/* 미디어쿼리(media query) */
+
+@media screen and (max-width:768px) {
+    .main_img_1920 { display: none;}
+    .main_img_768 { display: block;}
+}
+
+@media screen and (max-width:375px) {
+    .main_img_768 { display: none;}
+    .main_img_375 { display: block;}
+}
